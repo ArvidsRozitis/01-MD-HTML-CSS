@@ -19,6 +19,13 @@ dd {
   margin: 0;
 }
 
+hr {
+  border: none;
+  background-color: #ccc;
+  color: #ccc;
+  height: 1px;
+}
+
 @font-face {
   font-family: 'Poppins';
   src: url(assets/fonts/Poppins-Regular.ttf) format('truetype');
@@ -43,6 +50,10 @@ dd {
   font-family: 'Poppins Thin';
   src: url(assets/fonts/Poppins-Thin.ttf) format('truetype');
 }
+@font-face {
+  font-family: 'TT Hoves';
+  src: url(assets/fonts/TT-Hoves-Regular.ttf) format('truetype');
+}
 
 
 
@@ -59,7 +70,7 @@ dd {
 
 /*head*/
 .section-head{
-  background-color: #FCFCFC;;
+  background-color: #FFFFFF;
   width: 1903px;
   height: 890px;
   margin: 0 auto;
@@ -154,10 +165,6 @@ dd {
   padding-top: 140px;
 }
 
-
-
-
-
 /*Services*/
 .services-section{
     width: 1903px;
@@ -171,7 +178,7 @@ dd {
   gap: 22px;
   padding-bottom: 50px;
 }
-.services-header-container{
+.decorative-header-container{
   display: flex;
   align-self: center;
   padding-top: 70px;
@@ -197,33 +204,86 @@ dd {
 
 }
 
+/*contact-us*/
+.contact-us-section{
+  width: 1903px;
+  height: 538px;
+  margin: 0 auto;
+  background-color: #FFFFFF;
+}
+.contact-us-content-container{
+  display: flex;
+  flex-direction: row; 
+  justify-content: center;
+  gap: 100px;
+}
+.contac-us-buttons-container{
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.contact-us-button-container{
+  display: flex;
+  justify-items: center;
+}
+.contac-us-contacts-container{
+  display: flex;
+  flex-direction: column;
+  gap: 37px;
+  padding-top: 30px;
+}
+.contac-us-contact-container{
+  display: flex;
+  flex-direction: row;
+  gap: 22px;
+}
+
+
+
+
+
+
+/*footer*/
+.footer-section{
+  width: 1903px;
+  height: 145px;
+  margin: 0 auto;
+  background-color: #0C1E49;;
+}
+
 
 /*heading decoration*/
+.heading-decoration-CL{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  left: 30px;
+}
+.heading-decoration-CR{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  right: 30px;
+}
 .heading-decoration{
   width: 45.25px;
-  height: 0px;
-  border: 2px solid #6D91EE;
-  margin: 0 auto;  
+  height: 2px;
+  background-color: #6D91EE;
+  margin: 0 auto;
 }
 .heading-decoration-left-top{
-  transform: rotate(-45deg);
-  align-self: flex-end;
-  justify-self: start;
+  transform: rotate(-45deg); 
 }
 .heading-decoration-left-bottom{
   transform: rotate(45deg);
-  align-self: flex-end;
-  justify-self: start;
 }
 .heading-decoration-right-bottom{
   transform: rotate(-45deg);
-  align-self: flex-end;
-  justify-self: flex-end;
 }
 .heading-decoration-right-top{
   transform: rotate(45deg);
-  align-self: flex-end;
-  justify-self: flex-end;
 }
 .heading-decoration-box{
   display: flex;
@@ -336,6 +396,37 @@ dd {
   text-decoration: none;
   margin: 0 auto;
 }
+.button-contact {
+  justify-content: center;
+  border: transparent;
+  width: 374px;
+  height: 56px;
+  border-radius: 61px;
+  font-family: 'Poppins';
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  background: #CEDCFF;
+  color: transparent;
+}
+.button-suscribe{
+  justify-content: center;
+  border: transparent;
+  width: 168px;
+  height: 56px;
+  border: 3px solid #5180F6;
+  border-radius: 61px;
+  font-family: 'Poppins';
+  font-size: 24px;
+  line-height: 36px;
+  text-align: center;
+  text-decoration: none;
+  margin: 0 auto;
+  background: transparent;
+  color: transparent;
+}
 
 
 
@@ -407,4 +498,19 @@ dd {
   font-size: 14px;
   line-height: 22px;
   color: #22366A;
+}
+
+
+
+
+
+/*links*/
+.contact-link{
+  font-family: 'TT Hoves';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  color: #333333;
+  text-decoration: none;
 }
