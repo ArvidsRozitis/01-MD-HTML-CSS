@@ -61,45 +61,123 @@ body{
   justify-content: center;
 }
 
-.page-container{
-  width: 1903px;
+
+
+
+.container{
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
   margin: 0 auto;
+  align-items: center;  
 }
 
-/*salaušana*/
-
-@media (max-width: 1200px) {
-  .page-container {
-      width: 800px;
-      max-width: 800px;
+@media (min-width: 1903px) {
+  .head-section{
+    width: 1903px;
+  }
+  .about-section{
+    width: 1903px;
+  }
+  .services-section{
+    width: 1903px;
+  }
+  .testymonials-section{
+    width: 1903px;
+  }
+  .contact-us-section{
+    width: 1903px;
+  }
+  .footer-section{
+    width: 1903px;
   }
 }
 
-/*salaušana*/
-
-
-
+@media (max-width: 1199px) {
+  .container{
+    width: 100%;
+  }
+  .head-section{
+  .head-container-with-bg{
+    background: url(assets/images/head-background.svg) no-repeat;
+    }
+  .head-content-container{
+    background-color:rgba(255, 255, 255, 0.719);
+  } 
+  }
+  .about-section{
+    display: flex;
+    height: 100%;
+    padding-bottom: 50px;
+    .about-top{
+      display: flex;
+      background: transparent;      
+      height: unset;
+    }
+    .about-container{
+      display: flex;
+      width: 100%; 
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  .services-section{
+    display: flex;
+    height: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #5180F6;
+    .service-multiple-cards-container{
+      display: flex;
+      flex-direction: column;
+    }
+  }
+  .testymonials-section{
+    display: flex;
+    height: 100%;
+    padding-bottom: 50px;
+    border-bottom: 1px solid #5180F6;
+    .testymonials-cards-row{
+      flex-direction: column;
+    }
+  }
+  .contact-us-section{
+    display: flex;
+    height: 100%;
+    padding-top: 50px;
+    .contact-us-content-container{
+      flex-direction: column;
+      gap: 50px;
+    }
+    .contac-us-contacts-container{      
+      padding-top: 0px;
+    }
+  }
+}
 
 /*head*/
 .head-section{
   background-color: #FFFFFF;
   height: 890px;
   margin: 0 auto;
+  
+  justify-items: center;
 }
 .head-container-with-bg{
-  width: 1259px;
+  display: flex;
+  
   height: 840px;
-  background: url(assets/images/head-background.svg);
+  background: url(assets/images/head-background.svg) no-repeat;
+  justify-content: center;
+
 }
-.head-content-container{
+.head-content-container{  
   display: flex;
   flex-direction: column;
-  position: relative;
+  padding-top: 79px;
   width: 707px;
   height: 686px;
-  left: 598px;
-  top: 79px;
   align-items: center;
+  align-self: center;
 }
 .logo-container{
   margin-bottom: 125px; 
@@ -124,7 +202,6 @@ body{
 
 /*about*/
 .about-section{
-  height: 840px;
   margin: 0 auto;
   background: url(assets/images/about-bg-img.png);
 }
@@ -133,15 +210,9 @@ body{
   margin: 0 auto;
   background: url(assets/images/about-vector.png) no-repeat right;
 }
-.container{
+.about-container{  
   display: flex;
-  flex-direction: column;
-  width: 1200px;
-  margin: 0 auto;
-  justify-items: center;
-}
-.about-container{
-  display: flex;  
+  width: 1200px; 
   flex-direction: row;
   justify-content: space-between;
 }
@@ -169,10 +240,11 @@ body{
 }
 
 /*Services*/
-.services-section{
-    height: 882px;
-    margin: 0 auto;
-    background-color: #FFFFFF;
+.services-section{ 
+  margin: 0 auto;
+  background-color: #FFFFFF;
+  justify-content: center;
+  padding-top: 86px;
 }
 .service-multiple-cards-container{
   display: flex;
@@ -183,20 +255,22 @@ body{
 .decorative-header-container{
   display: flex;
   align-self: center;
-  padding-top: 70px;
-  padding-bottom: 50px;
+  padding-bottom: 66px;
 }
 
 /*testemonials*/
 .testymonials-section{
-  height: 813px;
+  display: flex;
+  align-items: flex-end;
   margin: 0 auto;
   background-color: #FFFFFF;
+  padding-top: 86px;
 }
 .testymonials-cards-container{
   display: flex;
   flex-direction: column;
   gap: 45px;
+  padding-bottom: 50px;
 }
 .testymonials-cards-row{
   display: flex;
@@ -206,15 +280,18 @@ body{
 
 /*contact-us*/
 .contact-us-section{
-  height: 538px;
+  display: flex;
+  align-items: flex-end;
   margin: 0 auto;
   background-color: #FFFFFF;
+  padding-top: 66px;
 }
 .contact-us-content-container{
   display: flex;
   flex-direction: row; 
   justify-content: center;
   gap: 100px;
+  padding-bottom: 50px;
 }
 .contac-us-buttons-container{
   display: flex;
